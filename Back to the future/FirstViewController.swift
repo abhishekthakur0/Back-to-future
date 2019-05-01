@@ -25,11 +25,17 @@ class FirstViewController: UIViewController {
         label3.text = Utilities().GetLeterAtIndex(str: year, location: 2)
         label4.text = Utilities().GetLeterAtIndex(str: year, location: 3)
         self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(FirstViewController.Tick), userInfo: nil, repeats: true)
+        Tick()
 
     }
 
     @objc func Tick() {
         timelabel.text = Utilities().GetCurrentTime()
+        UIView.animate(withDuration: 1.0, delay: 0, options: .curveEaseOut, animations: {
+            self.view.alpha = 0.5
+        }) { (true) in
+            self.view.alpha = 1.0
+        }
     }
 
 }
