@@ -59,10 +59,7 @@
                                 <color key="textColor" red="0.01889042178" green="1" blue="0.15174822460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sd-zE-LB1">
-                                <rect key="frame" x="132" y="510" width="150" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Tmw-93-s8O"/>
-                                </constraints>
+                                <rect key="frame" x="140.5" y="510" width="133.5" height="27"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,6 +147,9 @@
                                 <state key="normal" title="Go Future">
                                     <color key="titleColor" red="1" green="0.087157814380000004" blue="0.071150163690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="ButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="T2v-8j-qd9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -170,7 +170,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Time Travel" image="second" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="ButtonClick" destination="LVM-Yx-qoj" id="qnk-t8-TYb"/>
                         <outlet property="lab1" destination="SG8-ET-Rt1" id="ZmB-l3-Hyi"/>
                         <outlet property="lab2" destination="6so-IL-aSa" id="Bt7-vw-m35"/>
                         <outlet property="lab3" destination="1c9-84-b4B" id="i7L-Id-K8H"/>
